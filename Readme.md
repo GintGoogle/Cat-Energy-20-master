@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Tai aš ...].
-* Наставник: [O tokio, dėja, nėra ...].
+* Наставник: [O tokio, dėja, nėra … 😗]."https://www.delfi.lt"
 
 ---
 
