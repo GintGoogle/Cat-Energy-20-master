@@ -9,8 +9,8 @@
 <body class="page__body">
   <header class="page-header">
     <a href="index.html" class="page-header__logo logo">
-      <img class="logo__icon" src="https://via.placeholder.com/34x38" alt="">
-      <img class="logo__name" src="https://via.placeholder.com/101x18" alt="Logo-2">
+      <img class="logo__icon" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип">
+      <img class="logo__name" src="img/footer-logo-2.svg" width="101" height="18" alt="Cat Energy">
     </a>
 
     <nav class="page-header__nav main-nav">
@@ -27,11 +27,118 @@
   </header>
 
   <main class="page-main">
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main_tip">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
+    <form class="choice-form" action="https://echo.htmlacademy.ru" method="get">
+
+      <div class="choice-form__input-text input-text">
+        <label class="input-text__label" for="pet-name">Имя:*</label>
+        <input class="input-text__data" type="text" name="pet-name" id="pet-name" placeholder="Барсик" required>
+      </div>
+
+      <div class="choice-form__input-text input-text">
+        <label class="input-text__label" for="pet-weight">Вес (кг):*</label>
+        <input class="input-text__data" type="text" name="pet-weight" id="pet-weight" placeholder="7" required>
+      </div>
+
+      <div class="choice-form__input-text input-text">
+        <label class="input-text__label" for="pet-age">Возраст (лет):</label>
+        <input class="input-text__data" type="text" name="pet-age" id="pet-age" placeholder="7">
+      </div>
+
+      <fieldset class="choice-form__choice choice">
+        <legend class="visually-hidden">What you interested?</legend>
+
+        <ul class="choice__list">
+          <li class="choice__item">
+            <input class="choice__radio" type="radio" name="need" id="loss" value="loss">
+            <label class="choice__label" for="loss">Похудение</label>
+          </li>
+
+          <li class="choice__item">
+            <input class="choice__radio" type="radio" name="need" id="gain" value="gain">
+            <label class="choice__label" for="gain">Набор массы</label>
+          </li>
+
+          <li class="choice__item">
+            <input class="choice__radio" type="radio" name="need" id="advise" value="advise">
+            <label class="choice__label" for="advise">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="choice-form__contacts contacts">
+        <legend class="choice-form__legend">Контактные данные (владельца кота)</legend>
+
+        <div class="choice-form__input-text input-text">
+          <label class="input-text__label" for="mail">E-mail:*</label>
+          <input class="input-text__data input__text__data_mail" type="email" name="mail" id="mail"
+            placeholder="kuklachev@gmail.com" required>
+        </div>
+
+        <div class="choice-form__input-text input-text">
+          <label class="input-text__label" for="mail">Телефон:*</label>
+          <input class="input-text__data input__text__data_phone" type="tel" name="mail" id="mail"
+            placeholder="8 (960) 900-60-90" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="choice-form__about about">
+        <legend class="choice-form__legend">Комментарий</legend>
+
+        <div class="choice-form__input-area input-area">
+          <textarea class="input-area__data" name="about" cols="30" rows="6"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="choice-form__extras extras">
+        <legend class="choice-form__legend">Дополнительно</legend>
+
+        <ul class="extras__list">
+          <li class="extras__item">
+            <input class="extras__check" type="checkbox" name="sweetener" id="sweetener" checked>
+            <label class="extras__label" for="sweetener">сахарозаменитель</label>
+          </li>
+
+          <li class="extras__item">
+            <input class="extras__check" type="checkbox" name="water" id="water">
+            <label class="extras__label" for="water">питьевая вода</label>
+          </li>
+
+          <li class="extras__item">
+            <input class="extras__check" type="checkbox" name="milk" id="milk">
+            <label class="extras__label" for="milk">молоко</label>
+          </li>
+
+          <li class="extras__item">
+            <input class="extras__check" type="checkbox" name="vitamins" id="vitamins">
+            <label class="extras__label" for="vitamins">витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <button class="choice-form__submit button" type="submit">отправить заявку</button>
+
+      <p class="choice-form__note">* — Обязательные поля</p>
+    </form>
   </main>
 
   <footer class="page-footer">
-    <img class="page-footer__logo" src="https://via.placeholder.com/101x18" alt="Logo-2">
+
+    <section class="page-footer__invite invite">
+      <h2 class="invite__header">приглашаем к сотрудничеству дилеров!</h2>
+      <p class="invite__address">ул. Большая Конюшенная, д. 19/8</p>
+      <p class="invite__city">Санкт-Петербург</p>
+      <div class="invite__map">
+        <img src="img/location-mobile.png" alt="">
+      </div>
+    </section>
+
+    <a class="page-footer__logo" href="index.html">
+      <img class="logo__name" src="img/footer-logo-2.svg" width="101" height="18" alt="Cat Energy">
+    </a>
 
     <div class="page-footer__social social">
       <ul class="social__list">
@@ -53,7 +160,6 @@
       <a class="copyright__link" href="https//htmlacademy.ru">HTML Academy</a>
     </div>
   </footer>
-
 </body>
 
 </html>
