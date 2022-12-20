@@ -9,8 +9,8 @@
 <body class="page__body">
   <header class="page-header">
     <a href="index.html" class="page-header__logo logo">
-      <img class="logo__icon" src="https://via.placeholder.com/34x38" alt="">
-      <img class="logo__name" src="https://via.placeholder.com/101x18" alt="Logo-2">
+      <img class="logo__icon" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип">
+      <img class="logo__name" src="img/footer-logo-2.svg" width="101" height="18" alt="Cat Energy">
     </a>
 
     <nav class="page-header__nav main-nav">
@@ -29,8 +29,10 @@
 
   <main class="page-main">
     <h1 class="page-main__title">Каталог продукции</h1>
-    <section class="page-main__catalog catalog">
+
+    <section class="catalog">
       <h2 class="catalog__title">Список популярных товаров</h2>
+
       <ul class="catalog__list">
         <li class="catalog__item product-card">
           <a class="product-card__link" href="#">
@@ -200,10 +202,77 @@
         <a class="show-more__link button" href="#">Показать все</a>
       </div>
     </section>
+
+    <section class="additional-goods">
+      <h2 class="additional-goods__title">Дополнительные товары</h2>
+
+      <ul class="additional-goods__list">
+        <li class="additional-goods__item">
+          <a class="additional-goods__header" href="#">Сахарозаменитель</a>
+          <table class="additional-goods__features-list">
+            <tr>
+              <td>1 упаковка (100 г)</td>
+              <td class="additional-goods__coast">200 P.</td>
+            </tr>
+          </table>
+          <a class="additional-goods__order button" href="#">Заказать</a>
+        </li>
+
+        <li class="additional-goods__item">
+          <a class="additional-goods__header" href="#">питьевая вода</a>
+          <table class="additional-goods__features-list">
+            <tr>
+              <td>5 литров</td>
+              <td class="additional-goods__coast">50 P.</td>
+            </tr>
+          </table>
+          <a class="additional-goods__order button" href="#">Заказать</a>
+        </li>
+
+        <li class="additional-goods__item">
+          <a class="additional-goods__header" href="#">молоко</a>
+          <table class="additional-goods__features-list">
+            <tr>
+              <td>1 литров</td>
+              <td class="additional-goods__coast">100 P.</td>
+            </tr>
+          </table>
+          <a class="additional-goods__order button" href="#">Заказать</a>
+        </li>
+
+        <li class="additional-goods__item">
+          <a class="additional-goods__header" href="#">витамины</a>
+          <table class="additional-goods__features-list">
+            <tr>
+              <td>1 упаковка (30 г)</td>
+              <td class="additional-goods__coast">300 P.</td>
+            </tr>
+          </table>
+          <a class="additional-goods__order button" href="#">Заказать</a>
+        </li>
+      </ul>
+
+      <div class="aditional-goods__gift gift">
+        <p class="gift__promise">Закажите все и получите чехол для кота в подарок!</p>
+      </div>
+    </section>
+
   </main>
 
   <footer class="page-footer">
-    <img class="page-footer__logo" src="https://via.placeholder.com/101x18" alt="Logo-2">
+
+    <section class="page-footer__invite invite">
+      <h2 class="invite__header">приглашаем к сотрудничеству дилеров!</h2>
+      <p class="invite__address">ул. Большая Конюшенная, д. 19/8</p>
+      <p class="invite__city">Санкт-Петербург</p>
+      <div class="invite__map">
+        <img src="img/location-mobile.png" alt="">
+      </div>
+    </section>
+
+    <a class="page-footer__logo" href="index.html">
+      <img class="logo__name" src="img/footer-logo-2.svg" width="101" height="18" alt="Cat Energy">
+    </a>
 
     <div class="page-footer__social social">
       <ul class="social__list">
