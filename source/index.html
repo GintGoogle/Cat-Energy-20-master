@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -15,7 +16,7 @@
     </a>
 
     <nav class="page-header__nav main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--close" type="button">
         <span class="visually-hidden">Открить меню</span>
       </button>
 
@@ -29,6 +30,7 @@
     <section class="page-header__promo promo">
       <h2 class="promo__title">Функциональное питание для котов</h2>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
+      <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Банка с едой для кошек">
       <a class="promo__order button" href="form.html">Подобрать программу</a>
     </section>
 
@@ -40,14 +42,14 @@
     <section class="prop">
       <h2 class="visually-hidden">Предлагаемые диеты</h2>
       <ul class="prop__list">
-        <li class="prop__item">
+        <li class="prop__item prop__item--slim">
           <h3 class="prop__title">Похудение</h3>
           <p class="prop__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="#" class="prop__link">Каталог slim</a>
         </li>
 
-        <li class="prop__item">
+        <li class="prop__item prop__item--pro">
           <h3 class="prop__title">Набор массы</h3>
           <p class="prop__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!</p>
@@ -120,6 +122,7 @@
         <img src="img/location-mobile.png" alt="">
       </div>
     </section>
+
     <a class="page-footer__logo">
       <img class="logo__name" src="img/footer-logo-2.svg" width="101" height="18" alt="Cat Energy">
     </a>
@@ -127,15 +130,16 @@
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="hrrps://vk.com/htmlacademy">Мы ВКонтакте</a>
+          <a class="social__link social__link--vkontakte" href="hrrps://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы ВКонтакте</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="hrrps://instagram.com/htmlacademy">Мы в
-            Инсаграме</a>
+          <a class="social__link social__link--instagram" href="hrrps://instagram.com/htmlacademy">
+            <span class="visually-hidden">Мы в Инсаграме</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="hrrps://facebook.com/htmlacademy">Мы в
-            Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="hrrps://facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Фейсбуке</span></a>
         </li>
       </ul>
     </div>
