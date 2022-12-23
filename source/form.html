@@ -30,7 +30,7 @@
   <main class="page-main">
     <h1 class="page-main__title">Подбор программы</h1>
 
-    <form class="choice-form" action="https://echo.htmlacademy.ru" method="get">
+    <form class="page-main__form choice-form" action="https://echo.htmlacademy.ru" method="get">
       <p class="choice-form__tip">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
       <div class="choice-form__input-text input-text">
@@ -129,38 +129,45 @@
   <footer class="page-footer">
 
     <section class="page-footer__invite invite">
-      <h2 class="invite__header">приглашаем к сотрудничеству дилеров!</h2>
-      <p class="invite__address">ул. Большая Конюшенная, д. 19/8</p>
-      <p class="invite__city">Санкт-Петербург</p>
+      <h2 class="visually-hidden">Предложение инвесторам</h2>
+      <div class="invite__card">
+        <p class="invite__header">приглашаем к сотрудничеству дилеров!</p>
+        <p class="invite__address">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="invite__city">Санкт-Петербург</p>
+      </div>
+
       <div class="invite__map">
         <img src="img/location-mobile.png" alt="">
       </div>
     </section>
 
-    <a class="page-footer__logo">
-      <img class="logo__name" src="img/footer-logo-2.svg" width="101" height="18" alt="Cat Energy">
-    </a>
+    <div class="page-footer__icons">
+      <a class="page-footer__logo">
+        <img class="logo__name" src="img/footer-logo-2.svg" width="101" height="18" alt="Cat Energy">
+      </a>
 
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="hrrps://vk.com/htmlacademy">
-            <span class="visually-hidden">Мы ВКонтакте</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="hrrps://instagram.com/htmlacademy">
-            <span class="visually-hidden">Мы в Инсаграме</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="hrrps://facebook.com/htmlacademy">
-            <span class="visually-hidden">Мы в Фейсбуке</span></a>
-        </li>
-      </ul>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="hrrps://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы ВКонтакте</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="hrrps://instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инсаграме</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="hrrps://facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https//htmlacademy.ru">HTML Academy</a>
+      </div>
     </div>
 
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https//htmlacademy.ru">HTML Academy</a>
-    </div>
   </footer>
 </body>
 
