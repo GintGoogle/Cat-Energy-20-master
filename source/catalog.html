@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи каталог</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -14,7 +15,7 @@
     </a>
 
     <nav class="page-header__nav main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--close" type="button">
         <span class="visually-hidden">Открить меню</span>
       </button>
 
@@ -30,14 +31,15 @@
   <main class="page-main">
     <h1 class="page-main__title">Каталог продукции</h1>
 
-    <section class="catalog">
-      <h2 class="catalog__title">Список популярных товаров</h2>
+    <section class="page-main__catalog catalog">
+      <h2 class="visually-hidden">Список популярных товаров</h2>
 
       <ul class="catalog__list">
+
         <li class="catalog__item product-card">
           <a class="product-card__link" href="#">
             <img class="product-card__image" src="https://via.placeholder.com/84x101" alt="Пакетик с кормом">
-            <p class="product-card__header">Cat energy 1000 г</p>
+            <p class="product-card__header">Cat energy pro 500 г</p>
           </a>
           <table class="product-card__features-list">
             <tr>
@@ -197,13 +199,13 @@
       </ul>
 
       <div class="catalog__show-more show-more">
-        <b class="show-more__title">Показать еще 100500 товаров</b>
+        <p class="show-more__title">Показать еще 100500 товаров</p>
         <p class="show-more__important">На самом деле вкусов гораздо больше!</p>
         <a class="show-more__link button" href="#">Показать все</a>
       </div>
     </section>
 
-    <section class="additional-goods">
+    <section class="page-main__goods additional-goods">
       <h2 class="additional-goods__title">Дополнительные товары</h2>
 
       <ul class="additional-goods__list">
@@ -252,8 +254,10 @@
         </li>
       </ul>
 
-      <div class="aditional-goods__gift gift">
-        <p class="gift__promise">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="additional-goods__gift gift">
+        <p class="gift__promise">Закажите все <br>
+          и получите чехол для кота <br>
+          в подарок!</p>
       </div>
     </section>
 
@@ -262,37 +266,44 @@
   <footer class="page-footer">
 
     <section class="page-footer__invite invite">
-      <h2 class="invite__header">приглашаем к сотрудничеству дилеров!</h2>
-      <p class="invite__address">ул. Большая Конюшенная, д. 19/8</p>
-      <p class="invite__city">Санкт-Петербург</p>
+      <h2 class="visually-hidden">Предложение инвесторам</h2>
+      <div class="invite__card">
+        <p class="invite__header">приглашаем к сотрудничеству дилеров!</p>
+        <p class="invite__address">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="invite__city">Санкт-Петербург</p>
+      </div>
       <div class="invite__map">
         <img src="img/location-mobile.png" alt="">
       </div>
     </section>
 
-    <a class="page-footer__logo" href="index.html">
-      <img class="logo__name" src="img/footer-logo-2.svg" width="101" height="18" alt="Cat Energy">
-    </a>
+    <div class="page-footer__icons">
+      <a class="page-footer__logo">
+        <img class="logo__name" src="img/footer-logo-2.svg" width="101" height="18" alt="Cat Energy">
+      </a>
 
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="hrrps://vk.com/htmlacademy">Мы ВКонтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="hrrps://instagram.com/htmlacademy">Мы в
-            Инсаграме</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="hrrps://facebook.com/htmlacademy">Мы в
-            Фейсбуке</a>
-        </li>
-      </ul>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="hrrps://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы ВКонтакте</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="hrrps://instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инсаграме</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="hrrps://facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https//htmlacademy.ru">HTML Academy</a>
+      </div>
     </div>
 
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https//htmlacademy.ru">HTML Academy</a>
-    </div>
   </footer>
 
 </body>
