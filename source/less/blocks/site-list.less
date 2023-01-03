@@ -1,0 +1,28 @@
+.site-list {
+
+  &__item {
+    padding: 22px 0;
+    border-top: 1px solid @special_grey;
+
+    & a {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+
+  // keičiu išsidėstymą iš mobilaus į didesni formato
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    &__item {
+      border: none;
+    }
+  }
+
+  // keičiu navigacijos spalvą desktope
+  @media (min-width: @desktop-width) {
+    &__item a {
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.page-header {
+
+  @media (min-width: @tablet-width) {
+
+    // Logotipas ir navigacijos nuorodos persikelia į vieną liniją
+    &__nav-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+  }
+
+
+  @media (min-width: @desktop-width) {
+    // Fono paveikslas dešinėje. Pagal jį ir bloko aukštis
+    height: 700px;
+    background-image: url(../../img/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+
+    // Atitraukimas nuo krašto navigacijos juostai
+    &__nav-line {
+      padding: 50px 110px;
+      padding-bottom: 30px;
+    }
+  }
+}
