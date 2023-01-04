@@ -1,14 +1,31 @@
 .catalog {
-  margin: auto, 0;
+
 
   &__list {
+    margin: auto;
     list-style: none;
     padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 324px 324px;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: 245px 245px 245px 245px;
+      column-gap: 80px;
+    }
   }
 
   &__item {
-    // plotis - tikriausiai laikinas
-    width: 280px;
+    padding: 20px;
+
+
   }
 
 
