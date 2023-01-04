@@ -1,0 +1,83 @@
+.promo {
+  padding: 20px;
+  height: 480px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+
+  color: #ffffff;
+  // background-color: @basic-green-2;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &__title {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+
+  }
+
+  &__order {
+    margin: auto;
+    color: #ffffff;
+    font-size: 14px;
+    max-width: 320px;
+  }
+
+  // -----  Keičiam savybes  planšetės variantui ...
+  @media (min-width: @tablet-width) {
+    padding: 30px;
+    height: 780px;
+
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+
+    background-image: url(../img/index-can-tablet@1x.jpg);
+    background-position: center bottom;
+    color: #000000;
+
+    &__wrapper {
+      margin-left: 80px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__slogan {
+      margin-bottom: 50px;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__order {
+      margin: 0;
+      height: 40px;
+      width: 260px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  //  --------    Pakeitimai darbastalio versijai  ...
+  @media (min-width: @desktop-width) {
+    height: 490px;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-image: url(../img/index-can-desktop@1x.png);
+    background-position: center top;
+
+    &__wrapper {
+      margin-left: 40px;
+    }
+  }
+
+}

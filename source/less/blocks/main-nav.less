@@ -1,0 +1,54 @@
+.main-nav {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    // Navigacijos sąrašo plotis ir elementų išsidėstymas
+    @media (min-width: @tablet-width) {
+      width: 440px;
+      height: 52px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 480px;
+      color: #ffffff;
+    }
+
+  }
+
+
+}
+
+
+//  meniu mygtukai mobilioje versijoje
+.main-nav__toggle {
+  display: block;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  &--close {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icon-close.svg);
+  }
+
+  &--open {
+    width: 24px;
+    height: 20px;
+    background-image: url(../img/icon-open.svg);
+  }
+
+  // --   mygtuko panaikinimsa ne mobilioje versijoje  ---
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

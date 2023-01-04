@@ -1,0 +1,87 @@
+.invite {
+  display: grid;
+
+  background-image: url(../../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  &__card {
+    box-sizing: border-box;
+    width: 100%;
+    outline: 2px solid rgba(20, 0, 255, 0.5);
+    outline-offset: -1px;
+
+    padding: 20px;
+    justify-self: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+
+  &__card--white {
+    background-color: #ffffff;
+  }
+
+  &__header {
+    width: 140px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__address,
+  &__city {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: @special_dark-grey;
+  }
+
+  &__map {
+    margin: auto;
+    width: 320px;
+    height: 362px;
+    // background-image: url(../../img/bg-map-mobile@1x.png);
+    // background-repeat: no-repeat;
+    // background-position: center center;
+
+    & img {
+      vertical-align: middle;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    // width: 764px;
+    height: 600px;
+    background-image: url(../../img/bg-map-tablet@1x.png);
+    background-size: 764px 400px;
+
+    &__card {
+      height: 200px;
+      padding: 70px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+    background-image: url(../../img/bg-map-desktop@1x.png);
+    background-position: center;
+    background-size: auto;
+
+    &__card {
+      grid-column: 1 / 2;
+      align-self: center;
+      width: 570px;
+      height: 200px;
+    }
+  }
+}

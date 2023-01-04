@@ -1,0 +1,51 @@
+.page-header {
+  border-bottom: 1px solid @special_grey;
+
+
+  // ---------    Planšetės versijai  -----------------------------------
+  @media (min-width: @tablet-width) {
+    border: none;
+
+    // Logotipas ir navigacijos nuorodos persikelia į vieną liniją
+    &__nav-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 30px;
+      height: 76px;
+    }
+  }
+
+  // ----------   Desktop  versijai smarkiai skiriasi  INDEX puslapio "kepurė"
+  @media (min-width: @desktop-width) {
+
+    &--index {
+      // Fono paveikslas dešinėje. Pagal jį ir bloko aukštis
+      height: 700px;
+      background-image: url(../../img/index-background-desktop@1x.jpg);
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+
+    // Paveikslo fone nuorodos - baltos spalvos
+    &--index .site-list__item a {
+      color: #ffffff;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    // Atitraukimas nuo krašto navigacijos juostai
+    &__nav-line {
+
+      height: 109px;
+      padding: 0 110px;
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.site-list {
+
+  &__item {
+    padding: 22px 0;
+    border-top: 1px solid @special_grey;
+
+    //  navigacijos nuorodų teksto apiforminimas
+    & a {
+      color: #000000;
+      text-decoration: none;
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+
+  // keičiu išsidėstymą iš mobilaus į didesni formato
+  @media (min-width: @tablet-width) {
+    display: flex;
+
+    &__item {
+      border: none;
+    }
+
+    &__item--active {
+      border-bottom: 3px solid green;
+    }
+  }
+
+  //  -------   INDEX  puslapy desktope  pabraukimas - baltas
+  @media (min-width: @desktop-width) {
+    &__item--index {
+      border-bottom: 3px solid #ffffff;
+    }
+  }
+
+}
